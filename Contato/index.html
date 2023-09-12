@@ -3,33 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="">
-        <label for="idNome">Nome Completo:</label><br>
-        <input type="text" id="idNome" name="nmNome">
-        <br><br>
+        <legend>Deixe seu recado...</legend>
 
-        <label for="idEmail">Email:</label><br>
-        <input type="text" id="idEmail" name="nmEmail">
-        <br><br>
+        <input type="text" id="idNome" name="nmNome" placeholder="Nome Completo" class="campo" required>
 
-        <label for="idEmpresa">Empresa/Organização:</label><br>
-        <input type="text" id="idEmpresa" name="nmEmpresa">
-        <br><br>
+        <input type="text" id="idEmail" name="nmEmail" placeholder="seu@email.com" class="campo" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
 
-        <label for="idTel">Tel.:</label><br>
-        <input type="text" id="idTel" name="nmTel">
-        <br><br>
+        <input type="text" id="idEmpresa" name="nmEmpresa" placeholder="Empresa/Organização:" class="campo" required>
 
-        <label for="idMotivo">Motivo do Contato:</label><br>
-        <input type="text" id="idMotivo" name="nmMotivo">
-        <br><br>
+        <input type="text" id="idTel" name="nmTel" placeholder="Tel." class="campo" maxlenght="11" pattern="[0-9]{11}">
 
-        <label for="idMensagem">Mensagem:</label><br>
-        <textarea name="nmMsg" id="idMsg" cols="30" rows="5"></textarea>
-        <br><br>
+        <select id="idMotivo" class="campo" required>
+            <option selected disable>Motivo do Contato</option>
+            <option value="elogio">Elogio</option>
+            <option value="problema-com-produto">Problema com produto</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <textarea name="nmMsg" id="idMsg" required cols="30" rows="5" placeholder="Mensagem" calss="campo" minlenght="10" maxlength="100"></textarea>
 
         <button type="submit">Enviar</button>
     </form>

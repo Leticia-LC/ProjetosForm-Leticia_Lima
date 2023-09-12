@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form class="cadastro">
+            <legend>Cadastro de Aluno</legend>
+
+            <div class = formulario>
+                <label for="nome">Nome</label>
+                <input type="text" id="idNome" required>
+
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="idSobrenome" required>
+
+                <label for="data-nasc">Data de Nascimento</label>
+                <input type="date" id="idData-nasc" min="2000-01-01" 
+                max="2017-12-31" required>
+                <label for="endereco">Endereço</label>
+                <input type="text" id="idEndereco" required>
+
+                <label for="mae">Nome da Mãe</label>
+                <input type="text" id="idMae" required>
+
+                <label for="pai">Nome do Pai</label>
+                <input type="text" id="idPai" required>
+
+                <label for="email">E-mail</label>
+                <input type="text" id="idEmail" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="idTelefone" required>
+
+                <label for="serie">Série</label>
+                <input type="number" id="idSerie" min="1" max="9" 
+                required>
+
+                <label for="sexo">Sexo</label>
+                <div class="sexo">
+                    <input type="radio" name="sexo" id="fem" 
+                    value="F" checked>
+                            <label for="feminino" 
+                            id="feminino">Feminino</label>
+                            <input type="radio" name="sexo" 
+                            id="masculino" value="M">
+                            <label for="masculino" 
+                            id="masc">Masculino</label>
+                </div>
+
+                <label for="necessidades" 
+                class="necessidadesEspeciais"> Necessidades 
+                Especiais</label>
+
+                <div>
+                    <input type="checkbox" name="nmNecessidade" 
+                    id="idAuditiva">
+                    <label class = "campoN" 
+                    for="idAuditiva">Deficiência Auditiva</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nmNecessidades" 
+                    id="idMotora">
+                    <label class="campoN" 
+                    for="idMotora">Deficiência Motora</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nmNecessidades" 
+                    id="idVisual">
+                    <label class="campoN" 
+                    for="idVisual">Deficiência Visual</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nmNecessidades" 
+                    id="idCerebral">
+                    <label class="campoN" 
+                    for="idCerebral">Paralisia Cerebral</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nmNecessidades" 
+                    id="idAutista">
+                    <label class="campoN" 
+                    for="idAutista">Pertubação do Espectro Autista
+                </div></label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nmNecessidades" 
+                    id="idPsicologico">
+                    <label class="campoN" 
+                    for="idPsicologico">Pertubação do Foro 
+                    Psicológico </label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nmNecessidades" 
+                    id="idAprendizagem">
+                    <label class="campoN" 
+                    for="idAprendizagem">Pertubação de Aprendizagem
+                </div></label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nmNecessidades" 
+                    id="idAltas">
+                    <label class="campoN" for="idAltas">Altas Habilidades </label>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="botoes">
+            <button type="submit" class="salvar">Salvar</button>
+            <button type="reset" class="resetar">Limpar Tela</button>
+
+        </div>
+    </main>
+    
+</body>
+</html>

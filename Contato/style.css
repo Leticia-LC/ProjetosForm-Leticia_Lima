@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: felx;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo{
+    margin-top: 20px;
+    border: 1.5px solid black;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+}
+
+.button{
+    margin-top: 25px;
+    font-weight: bolder;
+    font-weight: 500; 
+    color:rgb(255, 253, 251);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column
+
+}
+
+.inputs{
+    display: flex;
+    font-size: 1em;
+    width: 300px;
+    flex-direction: column;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    padding: 20px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+}
+
+
